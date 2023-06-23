@@ -14,6 +14,12 @@
       "url": "https://json.schemastore.org/base-04.json"
     },
     {
+      "name": "1Password SSH Agent Config",
+      "description": "Configuration file for the 1Password SSH agent.",
+      "fileMatch": ["**/1password/ssh/agent.toml"],
+      "url": "https://developer.1password.com/schema/ssh-agent-config.json"
+    },
+    {
       "name": "Application Accelerator",
       "description": "Application Accelerator for VMware Tanzu",
       "fileMatch": ["accelerator.yaml"],
@@ -39,6 +45,24 @@
       "description": "AdonisJS configuration file",
       "fileMatch": [".adonisrc.json"],
       "url": "https://raw.githubusercontent.com/adonisjs/application/master/adonisrc.schema.json"
+    },
+    {
+      "name": "aerleon.yml",
+      "description": "Aerleon configuration file",
+      "fileMatch": ["aerleon.yml"],
+      "url": "https://raw.githubusercontent.com/aerleon/aerleon/main/schemas/aerleon-config.schema.json"
+    },
+    {
+      "name": "Aerleon Network & Service Definitions",
+      "description": "Aerleon network & service definition file",
+      "fileMatch": ["**/def/**/*.yaml"],
+      "url": "https://raw.githubusercontent.com/aerleon/aerleon/main/schemas/aerleon-definitions.schema.json"
+    },
+    {
+      "name": "Aerleon Policy",
+      "description": "Aerleon policy file",
+      "fileMatch": ["**/policies/**/*.yaml"],
+      "url": "https://raw.githubusercontent.com/aerleon/aerleon/main/schemas/aerleon-policies.schema.json"
     },
     {
       "name": ".agripparc.json",
@@ -296,6 +320,15 @@
       "url": "https://raw.githubusercontent.com/asyncapi/website/master/scripts/tools/tools-schema.json"
     },
     {
+      "name": "Aurora Agile Meta-Framework",
+      "description": "Yaml schema for Aurora Agile Meta-Framework",
+      "fileMatch": ["*.aurora.yaml", "*.aurora.yml"],
+      "url": "https://json.schemastore.org/aurora-1.0.json",
+      "versions": {
+        "1.0": "https://json.schemastore.org/aurora-1.0.json"
+      }
+    },
+    {
       "name": "Avro Avsc",
       "description": "Avro Schema Avsc file",
       "fileMatch": ["*.avsc"],
@@ -319,6 +352,14 @@
       "versions": {
         "4": "https://json.schemastore.org/azure-deviceupdate-update-manifest-4.json",
         "5": "https://json.schemastore.org/azure-deviceupdate-update-manifest-5.json"
+      }
+    },
+    {
+      "name": "Azure DevOps extension manifest",
+      "description": "Azure DevOps extension manifest schema",
+      "url": "https://json.schemastore.org/azure-devops-extension-manifest-1.0.json",
+      "versions": {
+        "1.0": "https://json.schemastore.org/azure-devops-extension-manifest-1.0.json"
       }
     },
     {
@@ -1025,6 +1066,12 @@
       "url": "https://json.schemastore.org/chrome-manifest.json"
     },
     {
+      "name": "chrome-extension-locales-messages.json",
+      "description": "Google Chrome extension localization file",
+      "fileMatch": ["**/_locales/*/messages.json"],
+      "url": "https://json.schemastore.org/chrome-extension-locales-messages.json"
+    },
+    {
       "name": "chutzpah.json",
       "description": "Chutzpah configuration file",
       "fileMatch": ["chutzpah.json"],
@@ -1563,6 +1610,12 @@
       "description": "JSON schema for ffizer template configuration files",
       "fileMatch": [".ffizer.yaml"],
       "url": "https://ffizer.github.io/ffizer/ffizer.schema.json"
+    },
+    {
+      "name": "Firebase",
+      "description": "JSON Schema for firebase",
+      "fileMatch": ["firebase.json"],
+      "url": "https://raw.githubusercontent.com/firebase/firebase-tools/master/schema/firebase-config.json"
     },
     {
       "name": "first-timers-bot",
@@ -2911,8 +2964,21 @@
     {
       "name": "prometheus.rules.json",
       "description": "Prometheus rules file",
-      "fileMatch": ["*.rules"],
+      "fileMatch": [
+        "*.rules.yml",
+        "*.rules.yaml",
+        "*rules.yml",
+        "*rules.yaml",
+        "rules.yml",
+        "rules.yaml"
+      ],
       "url": "https://json.schemastore.org/prometheus.rules.json"
+    },
+    {
+      "name": "prometheus.rules.test.json",
+      "description": "Prometheus rules test file",
+      "fileMatch": ["*.tests.yml", "*.tests.yaml", "*.test.yml", "*.test.yaml"],
+      "url": "https://json.schemastore.org/prometheus.rules.test.json"
     },
     {
       "name": "proxies.json",
@@ -4886,7 +4952,8 @@
       "url": "https://json.schemastore.org/pantsbuild-2.15.0.json",
       "versions": {
         "2.14.0": "https://json.schemastore.org/pantsbuild-2.14.0.json",
-        "2.15.0": "https://json.schemastore.org/pantsbuild-2.15.0.json"
+        "2.15.0": "https://json.schemastore.org/pantsbuild-2.15.0.json",
+        "2.16.0": "https://json.schemastore.org/pantsbuild-2.16.0.json"
       }
     },
     {
@@ -4900,6 +4967,18 @@
       "description": "The configuration file used for ES6 Import Sorter - a vscode extention .",
       "fileMatch": [".es6importsorterrc.json"],
       "url": "https://json.schemastore.org/es6importsorterrc.json"
+    },
+    {
+      "name": "completely.yml",
+      "description": "Completely completion",
+      "fileMatch": ["completely.yml", "completely.yaml"],
+      "url": "https://github.com/DannyBen/completely/blob/master/schemas/completely.json"
+    },
+    {
+      "name": "madness.yml",
+      "description": "Madness settings",
+      "fileMatch": ["madness.yml", "madness.yaml"],
+      "url": "https://raw.githubusercontent.com/DannyBen/madness/master/schemas/madness.json"
     },
     {
       "name": "bashly.yml",
