@@ -582,7 +582,7 @@
     {
       "name": "bitbucket-pipelines",
       "description": "Bitbucket Pipelines CI/CD manifest schema",
-      "url": "https://bitbucket.org/atlassianlabs/atlascode/raw/main/resources/schemas/pipelines-schema.json",
+      "url": "https://bitbucket.org/atlassianlabs/intellij-bitbucket-references-plugin/raw/master/src/main/resources/schemas/bitbucket-pipelines.schema.json",
       "fileMatch": ["bitbucket-pipelines.yml"]
     },
     {
@@ -758,8 +758,8 @@
       }
     },
     {
-      "name": "Cargo Config Schema",
-      "description": "Configuration for Cargo, the Rust package manager and build tool",
+      "name": "Cargo Manifest",
+      "description": "Manifest for Cargo, the Rust package manager and build tool",
       "fileMatch": ["Cargo.toml"],
       "url": "https://json.schemastore.org/cargo.json"
     },
@@ -928,7 +928,7 @@
       "name": "Helm Unittest Test Suite",
       "description": "A Helm Unittest Test Suite file",
       "fileMatch": ["**/charts/*/tests/*.yaml"],
-      "url": "https://raw.githubusercontent.com/helm-unittest/helm-unittest/v0.3.1/schema/helm-testsuite.json"
+      "url": "https://raw.githubusercontent.com/helm-unittest/helm-unittest/v0.3.3/schema/helm-testsuite.json"
     },
     {
       "name": "CircleCI config.yml",
@@ -957,7 +957,12 @@
     {
       "name": "clangd",
       "description": "Clang language server daemon",
-      "fileMatch": [".clangd", ".clangd.yml", ".clangd.yaml"],
+      "fileMatch": [
+        ".clangd",
+        ".clangd.yml",
+        ".clangd.yaml",
+        "**/clangd/config.yaml"
+      ],
       "url": "https://json.schemastore.org/clangd.json"
     },
     {
@@ -1178,12 +1183,6 @@
       "description": "Component Detection manifest",
       "fileMatch": ["cdmanifest.json", "cgmanifest.json"],
       "url": "https://json.schemastore.org/component-detection-manifest.json"
-    },
-    {
-      "name": "config.json",
-      "description": "ASP.NET project config file",
-      "fileMatch": ["config.json"],
-      "url": "https://json.schemastore.org/config.json"
     },
     {
       "name": "contribute.json",
@@ -1421,6 +1420,17 @@
       "url": "https://json.schemastore.org/dotnetcli.host.json"
     },
     {
+      "name": "dprint.json",
+      "description": "dprint configuration file",
+      "fileMatch": [
+        "dprint.json",
+        "dprint.jsonc",
+        ".dprint.json",
+        ".dprint.jsonc"
+      ],
+      "url": "https://dprint.dev/schemas/v0.json"
+    },
+    {
       "name": "drone.json",
       "description": "Drone CI configuration file",
       "fileMatch": [".drone.yml"],
@@ -1438,13 +1448,10 @@
       "url": "https://json.schemastore.org/dss-2.0.0.json"
     },
     {
-      "name": "dstack Workflows",
-      "description": "YAML schema for dstack Workflows",
-      "fileMatch": [
-        "**/.dstack/workflows/*.yml",
-        "**/.dstack/workflows/*.yaml"
-      ],
-      "url": "https://raw.githubusercontent.com/dstackai/dstack/master/cli/dstack/schemas/workflows.json"
+      "name": "dstack configuration",
+      "description": "YAML schema for dstack configurations",
+      "fileMatch": ["*.dstack.yml", "*.dstack.yaml"],
+      "url": "https://dstack-runner-downloads.s3.eu-west-1.amazonaws.com/latest/schemas/configuration.json"
     },
     {
       "name": "dvc.yaml",
@@ -1664,6 +1671,12 @@
       "description": "JSON schema for FOSSA CLI's fossa-deps file",
       "fileMatch": ["fossa-deps.yml", "fossa-deps.yaml", "fossa-deps.json"],
       "url": "https://raw.githubusercontent.com/fossas/fossa-cli/master/docs/references/files/fossa-deps.schema.json"
+    },
+    {
+      "name": "Karakum configuration file",
+      "description": "Schema for configuring Karakum, a converter of TypeScript declaration files to Kotlin declarations",
+      "fileMatch": ["karakum.config.json"],
+      "url": "https://raw.githubusercontent.com/karakum-team/karakum/master/schema/karakum-schema.json"
     },
     {
       "name": "Knative Functions - func.yaml",
@@ -2094,8 +2107,9 @@
       "name": "JReleaser",
       "description": "JSON schema for JReleaser config file",
       "fileMatch": ["jreleaser.yml", "jreleaser.json"],
-      "url": "https://json.schemastore.org/jreleaser-1.6.0.json",
+      "url": "https://json.schemastore.org/jreleaser-1.7.0.json",
       "versions": {
+        "1.7.0": "https://json.schemastore.org/jreleaser-1.7.0.json",
         "1.6.0": "https://json.schemastore.org/jreleaser-1.6.0.json"
       }
     },
@@ -2238,6 +2252,14 @@
       "description": "A JSON schema for the ASP.NET LaunchSettings.json files",
       "fileMatch": ["launchsettings.json"],
       "url": "https://json.schemastore.org/launchsettings.json"
+    },
+    {
+      "name": "Lefthook",
+      "description": "Fast and powerful Git hooks manager",
+      "fileMatch": [
+        "{.lefthook,lefthook,lefthook-local,.lefthook-local}.{yml,yaml,toml,json}"
+      ],
+      "url": "https://json.schemastore.org/lefthook.json"
     },
     {
       "name": "lego.json",
@@ -2473,6 +2495,18 @@
       "url": "https://json.schemastore.org/minecraft-texture-mcmeta.json"
     },
     {
+      "name": "Minecraft Data Pack Trim Material",
+      "description": "Configuration file defining a trim material for a data pack for Minecraft.",
+      "fileMatch": ["**/data/*/trim_material/*.json"],
+      "url": "https://json.schemastore.org/minecraft-trim-material.json"
+    },
+    {
+      "name": "Minecraft Data Pack Trim Pattern",
+      "description": "Configuration file defining a trim pattern for a data pack for Minecraft.",
+      "fileMatch": ["**/data/*/trim_pattern/*.json"],
+      "url": "https://json.schemastore.org/minecraft-trim-pattern.json"
+    },
+    {
       "name": "MkDocs Configuration 1.0",
       "description": "JSON schema for MkDocs configuration file",
       "fileMatch": ["mkdocs.yml"],
@@ -2670,6 +2704,12 @@
         "open-rpc.yaml"
       ],
       "url": "https://meta.open-rpc.org/"
+    },
+    {
+      "name": "ops.yaml",
+      "description": "Schema for Ops configuration file (ops.yaml)",
+      "fileMatch": ["ops.yml", "ops.yaml"],
+      "url": "https://raw.githubusercontent.com/LeShaunJ/ops-schema/main/ops.schema.json"
     },
     {
       "name": "ONe's service descriptor",
@@ -3023,6 +3063,12 @@
       "url": "https://json.schemastore.org/rancher-fleet.json"
     },
     {
+      "name": "config.yaml",
+      "description": "Projektor settings",
+      "fileMatch": ["**/.projektor/config.yaml"],
+      "url": "https://json.schemastore.org/projektor.json"
+    },
+    {
       "name": "Read the Docs",
       "description": "Read the Docs configuration file",
       "fileMatch": [
@@ -3154,7 +3200,7 @@
     {
       "name": "RoadRunner",
       "description": "Spiral Roadrunner config file schema",
-      "url": "https://cdn.jsdelivr.net/gh/roadrunner-server/roadrunner@latest/schemas/config/2.0.schema.json",
+      "url": "https://cdn.jsdelivr.net/gh/roadrunner-server/roadrunner@latest/schemas/config/3.0.schema.json",
       "fileMatch": [".rr*.yml", ".rr*.yaml"],
       "versions": {
         "1.0": "https://cdn.jsdelivr.net/gh/roadrunner-server/roadrunner@latest/schemas/config/1.0.schema.json",
@@ -3238,6 +3284,11 @@
       "url": "https://json.schemastore.org/sarif-2.1.0-rtm.5.json"
     },
     {
+      "name": "sarif-2.1.0-rtm.6",
+      "description": "Static Analysis Results Format (SARIF), Version 2.1.0-rtm.6",
+      "url": "https://json.schemastore.org/sarif-2.1.0-rtm.6.json"
+    },
+    {
       "name": "sarif-external-property-file-2.1.0-rtm.5",
       "description": "Static Analysis Results Format (SARIF) External Property File Format, Version 2.1.0-rtm.5",
       "url": "https://json.schemastore.org/sarif-external-property-file-2.1.0-rtm.5.json"
@@ -3287,7 +3338,11 @@
       "name": "Semantic Data Fabric (SDF) file",
       "description": "The schema definition for all available SDF blocks",
       "fileMatch": ["*.sdf.yml"],
-      "url": "https://cdn.sdf.com/schemas/sdf-schema-1.0.json"
+      "url": "https://cdn.sdf.com/schemas/sdf-schema-1.1.json",
+      "versions": {
+        "1.0": "https://cdn.sdf.com/schemas/sdf-schema-1.0.json",
+        "1.1": "https://cdn.sdf.com/schemas/sdf-schema-1.1.json"
+      }
     },
     {
       "name": "semantic-release",
@@ -3341,6 +3396,12 @@
       "url": "https://raw.githubusercontent.com/hardisgroupcom/sfdx-hardis/main/config/sfdx-hardis.jsonschema.json"
     },
     {
+      "name": "Sigrid scope configuration file",
+      "description": "Analysis scope configuration file used by Sigrid (sigrid-says.com)",
+      "fileMatch": ["sigrid.yaml"],
+      "url": "https://json.schemastore.org/sigrid-scope-file.schema.json"
+    },
+    {
       "name": "SIL Kit Participant Configuration",
       "description": "Configuration file for a Vector SIL Kit Participant",
       "fileMatch": [
@@ -3350,6 +3411,19 @@
         "*.silkit.yaml"
       ],
       "url": "https://json.schemastore.org/sil-kit-participant-configuration.json"
+    },
+    {
+      "name": "SIL Kit Registry Configuration",
+      "description": "Configuration file for Vector SIL Kit Registry Service",
+      "fileMatch": [
+        "silkit-registry.yaml",
+        "silkit-registry.yml",
+        "silkit-registry.json",
+        "*.silkit-registry.yaml",
+        "*.silkit-registry.yml",
+        "*.silkit-registry.json"
+      ],
+      "url": "https://json.schemastore.org/sil-kit-registry-configuration.json"
     },
     {
       "name": "size-limit configuration",
@@ -3568,7 +3642,7 @@
       "name": "tmLanguage",
       "description": "Language grammar description files in Textmate and compatible editors",
       "fileMatch": ["*.tmLanguage.json"],
-      "url": "https://raw.githubusercontent.com/Septh/tmlanguage/master/tmlanguage.json"
+      "url": "https://json.schemastore.org/tmlanguage.json"
     },
     {
       "name": "TestEnvironment.json",
@@ -3604,6 +3678,12 @@
       "description": "Define personal data schema in code using Transcend",
       "fileMatch": ["transcend.yml", "transcend.yaml"],
       "url": "https://raw.githubusercontent.com/transcend-io/cli/main/transcend-yml-schema-v4.json"
+    },
+    {
+      "name": "transcend-pathfinder.yml",
+      "description": "JSON schema for Transcend's Pathfinder, a proxy that intercepts calls to AI tools to enable AI governance",
+      "fileMatch": ["transcend-pathfinder.yml", "transcend-pathfinder.yaml"],
+      "url": "https://raw.githubusercontent.com/transcend-io/cli/main/pathfinder-policy-yml-schema.json"
     },
     {
       "name": "trunk.yaml schema",
@@ -3726,6 +3806,7 @@
       "url": "https://json.schemastore.org/utam-page-object.json",
       "versions": {
         "1.5.0": "https://json.schemastore.org/utam-page-object-1.5.0.json",
+        "2.0.3": "https://json.schemastore.org/utam-page-object-2.0.3.json",
         "current": "https://json.schemastore.org/utam-page-object.json"
       }
     },
@@ -4156,6 +4237,12 @@
       "url": "https://json.schemastore.org/helmfile.json"
     },
     {
+      "name": "helmwave",
+      "description": "Helmwave is a declarative spec for deploying helm charts",
+      "fileMatch": ["helmwave.yml"],
+      "url": "https://github.com/helmwave/helmwave/releases/latest/download/schema.json"
+    },
+    {
       "name": "Container Structure Test",
       "description": "The Container Structure Tests provide a powerful framework to validate the structure of a container image.",
       "fileMatch": ["container-structure-test.yaml", "structure-test.yaml"],
@@ -4249,6 +4336,12 @@
       }
     },
     {
+      "name": "djlint",
+      "description": "JSON Schema for djLint configuration file",
+      "url": "https://json.schemastore.org/djlint.json",
+      "fileMatch": [".djlintrc"]
+    },
+    {
       "name": "tsoa",
       "description": "JSON Schema for the tsoa configuration file",
       "url": "https://json.schemastore.org/tsoa.json",
@@ -4264,14 +4357,15 @@
       "name": "Gradle Enterprise",
       "description": "Gradle Enterprise configuration schema",
       "fileMatch": ["*gradle-enterprise.yml", "*gradle-enterprise.yaml"],
-      "url": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-6.json",
+      "url": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-7.json",
       "versions": {
         "1.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-1.json",
         "2.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-2.json",
         "3.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-3.json",
         "4.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-4.json",
         "5.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-5.json",
-        "6.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-6.json"
+        "6.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-6.json",
+        "7.0": "https://docs.gradle.com/enterprise/admin/schema/gradle-enterprise-config-schema-7.json"
       }
     },
     {
@@ -4853,6 +4947,12 @@
       "url": "https://json.schemastore.org/jfrog-pipelines.json"
     },
     {
+      "name": "Safebox Config Schema",
+      "description": "Schema for https://github.com/monebag/safebox",
+      "fileMatch": ["*safebox*.yaml", "*safebox*.yml"],
+      "url": "https://json.schemastore.org/safebox-schema-v1.0.0.json"
+    },
+    {
       "name": "StrmPrivacy batch job configuration file",
       "description": "StrmPrivacy batch job\nhttps://docs.strmprivacy.io/docs/latest/concepts/data-processing/batch-jobs/",
       "fileMatch": ["*batch-job-config*.json", "*batch-job-config*.yaml"],
@@ -4934,6 +5034,12 @@
       }
     },
     {
+      "name": "UET BuildConfig.json",
+      "description": "UET is an unofficial tool for Unreal Engine. The BuildConfig.json file allows you to specify how UET should build an Unreal Engine plugin, project or the engine itself.",
+      "fileMatch": ["BuildConfig.json"],
+      "url": "https://raw.githubusercontent.com/RedpointGames/uet-schema/main/root.json"
+    },
+    {
       "name": "Unreal Engine Uplugin",
       "description": "Unreal Engine plugin configuration file",
       "fileMatch": [".uplugin"],
@@ -4949,7 +5055,7 @@
       "name": "Pantsbuild",
       "description": "Pantsbuild configuration file",
       "fileMatch": ["pants*.toml"],
-      "url": "https://json.schemastore.org/pantsbuild-2.15.0.json",
+      "url": "https://json.schemastore.org/pantsbuild-2.16.0.json",
       "versions": {
         "2.14.0": "https://json.schemastore.org/pantsbuild-2.14.0.json",
         "2.15.0": "https://json.schemastore.org/pantsbuild-2.15.0.json",
@@ -4999,6 +5105,12 @@
       "url": "https://raw.githubusercontent.com/DannyBen/bashly/master/schemas/strings.json"
     },
     {
+      "name": "bpkg",
+      "description": "A lightweight Bash package manager",
+      "fileMatch": ["bpkg.json"],
+      "url": "https://json.schemastore.org/bpkg.json"
+    },
+    {
       "name": "micro-settings.json",
       "description": "Micro settings",
       "fileMatch": ["**/.config/micro/settings.json"],
@@ -5015,6 +5127,36 @@
       "description": "auto api case schema",
       "fileMatch": ["**/test_data/*.yml"],
       "url": "https://json.schemastore.org/case_schema.json"
+    },
+    {
+      "name": "secrethub.yml",
+      "description": "secrethub",
+      "fileMatch": ["secrethub.yml", "secrethub.yaml"],
+      "url": "https://raw.githubusercontent.com/DannyBen/secret_hub/master/schemas/secrethub.json"
+    },
+    {
+      "name": ".aliases",
+      "description": "Dynamic Bash aliases",
+      "fileMatch": [".aliases"],
+      "url": "https://json.schemastore.org/aliases.json"
+    },
+    {
+      "name": "syntax",
+      "description": "Micro Editor syntaxes",
+      "fileMatch": ["**/micro/runtime/syntax/*.yaml"],
+      "url": "https://json.schemastore.org/micro-syntax.json"
+    },
+    {
+      "name": "lazygit",
+      "description": "Lazy Git settings",
+      "url": "https://json.schemastore.org/lazygit.json",
+      "fileMatch": ["**/lazygit/config.yml"]
+    },
+    {
+      "name": "lazydocker",
+      "description": "Lazy Docker settings",
+      "url": "https://json.schemastore.org/lazydocker.json",
+      "fileMatch": ["**/lazydocker/config.yml"]
     }
   ],
   "version": 1
