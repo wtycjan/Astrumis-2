@@ -746,7 +746,11 @@
       "name": "Camel YAML DSL",
       "description": "Schema for Camel YAML DSL",
       "fileMatch": ["*.camel.yaml", "*.camelk.yaml"],
-      "url": "https://raw.githubusercontent.com/apache/camel/main/dsl/camel-yaml-dsl/camel-yaml-dsl/src/generated/resources/schema/camel-yaml-dsl.json"
+      "url": "https://raw.githubusercontent.com/apache/camel/main/dsl/camel-yaml-dsl/camel-yaml-dsl/src/generated/resources/schema/camelYamlDsl.json",
+      "versions": {
+        "3.x": "https://raw.githubusercontent.com/apache/camel/camel-3.x/dsl/camel-yaml-dsl/camel-yaml-dsl/src/generated/resources/schema/camel-yaml-dsl.json",
+        "4.x": "https://raw.githubusercontent.com/apache/camel/main/dsl/camel-yaml-dsl/camel-yaml-dsl/src/generated/resources/schema/camelYamlDsl.json"
+      }
     },
     {
       "name": "Carafe",
@@ -1161,6 +1165,12 @@
       "url": "https://raw.githubusercontent.com/aws/serverless-application-model/main/samtranslator/schema/schema.json"
     },
     {
+      "name": "AWS SAM CLI Samconfig",
+      "description": "AWS SAM CLI samconfig configuration file",
+      "fileMatch": ["samconfig.toml", "samconfig.yaml", "samconfig.yml"],
+      "url": "https://raw.githubusercontent.com/aws/aws-sam-cli/master/schema/samcli.json"
+    },
+    {
       "name": "chisel-slices.json",
       "description": "Canonical Chisel slices definition file",
       "fileMatch": ["**/slices/*.yaml"],
@@ -1300,6 +1310,18 @@
       "description": "Datalogic Scan2Deploy CE file",
       "fileMatch": [".dlc.json"],
       "url": "https://json.schemastore.org/datalogic-scan2deploy-ce.json"
+    },
+    {
+      "name": "ddev-global",
+      "description": "DDEV global configuration file",
+      "fileMatch": ["**/.ddev/global_config.yaml"],
+      "url": "https://raw.githubusercontent.com/ddev/ddev/master/pkg/globalconfig/schema.json"
+    },
+    {
+      "name": "ddev-project",
+      "description": "DDEV project configuration file",
+      "fileMatch": ["**/.ddev/config*.yaml"],
+      "url": "https://raw.githubusercontent.com/ddev/ddev/master/pkg/ddevapp/schema.json"
     },
     {
       "name": "debugsettings.json",
@@ -1856,6 +1878,12 @@
       "url": "https://goreleaser.com/static/schema-pro.json"
     },
     {
+      "name": "Goss",
+      "description": "Goss - Quick and Easy server validation",
+      "fileMatch": ["goss.yaml", "goss.yml", "goss.json"],
+      "url": "https://github.com/goss-org/goss/raw/master/docs/goss-json-schema.yaml"
+    },
+    {
       "name": "Grafana 5.x Dashboard",
       "description": "JSON Schema for Grafana 5.x Dashboards",
       "url": "https://json.schemastore.org/grafana-dashboard-5.x.json"
@@ -2119,8 +2147,9 @@
       "name": "JReleaser",
       "description": "JSON schema for JReleaser config file",
       "fileMatch": ["jreleaser.yml", "jreleaser.json"],
-      "url": "https://json.schemastore.org/jreleaser-1.7.0.json",
+      "url": "https://json.schemastore.org/jreleaser-1.8.0.json",
       "versions": {
+        "1.8.0": "https://json.schemastore.org/jreleaser-1.8.0.json",
         "1.7.0": "https://json.schemastore.org/jreleaser-1.7.0.json",
         "1.6.0": "https://json.schemastore.org/jreleaser-1.6.0.json"
       }
@@ -2246,6 +2275,12 @@
         "**/.kontinuous/env/*/values.yaml"
       ],
       "url": "https://raw.githubusercontent.com/socialgouv/kontinuous/v1/docs/values.schema.json"
+    },
+    {
+      "name": "kontinuous-config.yaml",
+      "description": "Schema for Kontinuous config.yaml configuration files",
+      "fileMatch": ["**/.kontinuous/config.yaml"],
+      "url": "https://raw.githubusercontent.com/socialgouv/kontinuous/v1/docs/config.schema.json"
     },
     {
       "name": "kustomization.yaml",
@@ -4739,7 +4774,11 @@
     {
       "name": "Cheatsheets",
       "description": "Cheatsheets config file schema",
-      "fileMatch": ["conf.yml", "conf.yaml"],
+      "fileMatch": [
+        "**/cheat/conf.yaml",
+        "**/cheat/conf.yml",
+        "**/.cheat/conf.yml"
+      ],
       "url": "https://json.schemastore.org/cheatsheets.json"
     },
     {
@@ -5067,11 +5106,12 @@
       "name": "Pantsbuild",
       "description": "Pantsbuild configuration file",
       "fileMatch": ["pants*.toml"],
-      "url": "https://json.schemastore.org/pantsbuild-2.16.0.json",
+      "url": "https://json.schemastore.org/pantsbuild-2.17.0.json",
       "versions": {
         "2.14.0": "https://json.schemastore.org/pantsbuild-2.14.0.json",
         "2.15.0": "https://json.schemastore.org/pantsbuild-2.15.0.json",
-        "2.16.0": "https://json.schemastore.org/pantsbuild-2.16.0.json"
+        "2.16.0": "https://json.schemastore.org/pantsbuild-2.16.0.json",
+        "2.17.0": "https://json.schemastore.org/pantsbuild-2.17.0.json"
       }
     },
     {
@@ -5169,6 +5209,12 @@
       "description": "Lazy Docker settings",
       "url": "https://json.schemastore.org/lazydocker.json",
       "fileMatch": ["**/lazydocker/config.yml"]
+    },
+    {
+      "name": "custom-elements.json",
+      "description": "A file format for describing custom elements",
+      "url": "https://raw.githubusercontent.com/webcomponents/custom-elements-manifest/main/schema.json",
+      "fileMatch": ["custom-elements.json"]
     }
   ],
   "version": 1
