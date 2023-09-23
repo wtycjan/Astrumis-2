@@ -1722,6 +1722,14 @@
 			"Type": "SymbolFile"
 		},
 		{
+			"Path": "$(EngineDir)/Binaries/Win64/UnrealEditor-MeshConversionEngineTypes.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Binaries/Win64/UnrealEditor-MeshConversionEngineTypes.pdb",
+			"Type": "SymbolFile"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/UnrealEditor-MeshDescription.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -3890,6 +3898,18 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Editor/ModelingToolsEditorMode/Binaries/Win64/UnrealEditor-ModelingToolsEditorMode.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/ModelingToolsEditorMode/Binaries/Win64/UnrealEditor-ModelingToolsEditorMode.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/ModelingToolsEditorMode/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Editor/ObjectMixer/LightMixer/Binaries/Win64/UnrealEditor-LightMixer.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -3947,6 +3967,18 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Editor/SpeedTreeImporter/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/StylusInput/Binaries/Win64/UnrealEditor-StylusInput.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/StylusInput/Binaries/Win64/UnrealEditor-StylusInput.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/StylusInput/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -4282,6 +4314,34 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor-GeometryFlowCore.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor-GeometryFlowCore.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor-GeometryFlowMeshProcessing.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor-GeometryFlowMeshProcessing.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor-GeometryFlowMeshProcessingEditor.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor-GeometryFlowMeshProcessingEditor.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Experimental/Iris/Binaries/Win64/UnrealEditor-Iris.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -4291,6 +4351,18 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Experimental/Iris/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/MeshLODToolset/Binaries/Win64/UnrealEditor-MeshLODToolset.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/MeshLODToolset/Binaries/Win64/UnrealEditor-MeshLODToolset.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/MeshLODToolset/Binaries/Win64/UnrealEditor.modules",
 			"Type": "RequiredResource"
 		},
 		{
@@ -26396,6 +26468,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Editor/ModelingToolsEditorMode/ModelingToolsEditorMode.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Editor/ObjectMixer/LightMixer/LightMixer.uplugin",
 			"Type": "UFS"
 		},
@@ -26413,6 +26489,10 @@
 		},
 		{
 			"Path": "$(EngineDir)/Plugins/Editor/SpeedTreeImporter/SpeedTreeImporter.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Editor/StylusInput/StylusInput.uplugin",
 			"Type": "UFS"
 		},
 		{
@@ -26492,7 +26572,15 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(EngineDir)/Plugins/Experimental/GeometryFlow/GeometryFlow.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(EngineDir)/Plugins/Experimental/Iris/Iris.uplugin",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(EngineDir)/Plugins/Experimental/MeshLODToolset/MeshLODToolset.uplugin",
 			"Type": "UFS"
 		},
 		{
