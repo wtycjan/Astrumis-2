@@ -573,6 +573,12 @@
       "fileMatch": ["*.bigquery.json"]
     },
     {
+      "name": "Bigconfig",
+      "description": "Bigconfig is a yaml-based declarative monitoring as code solution. Data engineers can deploy Bigeye metrics from the command-line for convenient and scalable data quality monitoring",
+      "fileMatch": ["bigconfig.yml", "bigconfig.yaml"],
+      "url": "https://json.schemastore.org/bigconfig.json"
+    },
+    {
       "name": "bitbucket-pipelines",
       "description": "Bitbucket Pipelines CI/CD manifest",
       "url": "https://bitbucket.org/atlassianlabs/intellij-bitbucket-references-plugin/raw/master/src/main/resources/schemas/bitbucket-pipelines.schema.json",
@@ -722,6 +728,12 @@
         ".better-scriptsrc.json"
       ],
       "url": "https://raw.githubusercontent.com/iamyoki/better-scripts/main/lib/schema.json"
+    },
+    {
+      "name": "Bleep",
+      "description": "A bleeping fast Scala build tool",
+      "fileMatch": ["bleep.yaml", "bleep.yml"],
+      "url": "https://raw.githubusercontent.com/oyvindberg/bleep/master/schema.json"
     },
     {
       "name": "CMake Presets",
@@ -1882,6 +1894,12 @@
       "url": "https://json.schemastore.org/golangci-lint.json"
     },
     {
+      "name": "go-feature-flag Flag Configuration",
+      "description": "go-feature-flag flag configuration file",
+      "fileMatch": ["*.goff.yml", "*.goff.yaml", "*.goff.json", "*.goff.toml"],
+      "url": "https://raw.githubusercontent.com/thomaspoignant/go-feature-flag/main/.schema/flag-schema.json"
+    },
+    {
       "name": "Goreleaser",
       "description": "Goreleaser configuration file",
       "fileMatch": [
@@ -2147,6 +2165,12 @@
       "url": "https://raw.githubusercontent.com/sergxerj/jdownloader2-crawler-rule-json-schema/main/jd2mcr.schema.json"
     },
     {
+      "name": "JFrog Applications Config",
+      "description": "Refines JFrog Advanced Security scans behavior",
+      "fileMatch": ["jfrog-apps-config.yml"],
+      "url": "https://raw.githubusercontent.com/jfrog/jfrog-apps-config/main/schema.json"
+    },
+    {
       "name": "JFrog File Spec",
       "description": "JFrog File Spec",
       "fileMatch": ["**/filespecs/*.json", "*filespec*.json", "*.filespec"],
@@ -2405,7 +2429,7 @@
     },
     {
       "name": "lsdlschema.json",
-      "description": "Linguistic Language files",
+      "description": "Power BI linguistic schema definition",
       "fileMatch": ["*.lsdl.yaml", "*.lsdl.json"],
       "url": "https://json.schemastore.org/lsdlschema.json"
     },
@@ -5299,6 +5323,30 @@
       "description": "Goblet serverless framework config",
       "url": "https://raw.githubusercontent.com/goblet/goblet/main/goblet.schema.json",
       "fileMatch": ["**/.goblet/config.json"]
+    },
+    {
+      "name": "Databricks Asset Bundles",
+      "description": "Databricks Asset Bundles config",
+      "url": "https://json.schemastore.org/databricks-asset-bundles.json",
+      "fileMatch": ["**/.databricks.yml"]
+    },
+    {
+      "name": "JSON Schema Draft 7 (unofficial strict)",
+      "description": "Meta-validation JSON Schema Draft 7 (unofficial strict)",
+      "url": "https://json.schemastore.org/metaschema-draft-07-unofficial-strict.json"
+    },
+    {
+      "name": "Visivo",
+      "description": "Visivo IO Project Files",
+      "fileMatch": [
+        "visivo.yml",
+        "visivo.yaml",
+        "visivo_project.yml",
+        "visivo_project.yaml",
+        "*.visivo.yml",
+        "*.visivo.yaml"
+      ],
+      "url": "https://docs.visivo.io/assets/visivo_schema.json"
     }
   ],
   "version": 1
