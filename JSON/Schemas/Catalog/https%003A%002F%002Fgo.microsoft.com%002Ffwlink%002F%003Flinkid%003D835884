@@ -412,6 +412,24 @@
       }
     },
     {
+      "name": "buf.yaml",
+      "description": "buf.yaml is used to define a module. It's the primary configuration file, and is responsible for the module's name, dependencies, and lint and breaking configuration",
+      "fileMatch": ["buf.yaml"],
+      "url": "https://json.schemastore.org/buf.json"
+    },
+    {
+      "name": "buf.gen.yaml",
+      "description": "buf.gen.yaml is a configuration file used by the buf generate command to generate integration code for the languages of your choice",
+      "fileMatch": ["buf.gen.yaml"],
+      "url": "https://json.schemastore.org/buf.gen.json"
+    },
+    {
+      "name": "buf.work.yaml",
+      "description": "buf.work.yaml is used to define a workspace, which is an advanced local development feature. Workspaces make it possible to consolidate one or more modules into a single buildable unit. They also allow users to run buf operations across multiple modules with a single execution (such as buf lint)",
+      "fileMatch": ["buf.work.yaml"],
+      "url": "https://json.schemastore.org/buf.work.json"
+    },
+    {
       "name": "CodeCV",
       "description": "CV format specification",
       "fileMatch": [
@@ -1786,6 +1804,12 @@
       "url": "https://raw.githubusercontent.com/roedoejet/g2p/main/g2p/mappings/.schema/g2p-config-schema-2.0.json"
     },
     {
+      "name": "Gaspar",
+      "description": "Configuration for Gaspar",
+      "fileMatch": ["gaspar.config.json"],
+      "url": "https://json.schemastore.org/gaspar-1.0.json"
+    },
+    {
       "name": "GatewayCore API Gateway",
       "description": "Cloudtoid GatewayCore API Gateway and Reverse Proxy",
       "fileMatch": [
@@ -2312,6 +2336,12 @@
       "name": "Kas",
       "description": "Configuration for the Kas setup tool",
       "url": "https://raw.githubusercontent.com/siemens/kas/master/kas/schema-kas.json"
+    },
+    {
+      "name": "k9s plugin.yml",
+      "description": "k9s CLI plugin.yml file : https://k9scli.io/topics/plugins",
+      "fileMatch": ["**/k9s/plugin.yml"],
+      "url": "https://raw.githubusercontent.com/derailed/k9s/master/plugins/schema.json"
     },
     {
       "name": "KrakenD",
@@ -4806,6 +4836,12 @@
         "0.1": "https://json.schemastore.org/mboats-config-0.1.json",
         "0.2": "https://json.schemastore.org/mboats-config-0.2.json"
       }
+    },
+    {
+      "name": "scikit-build",
+      "description": "Pyproject configuration for scikit-build-core",
+      "fileMatch": [],
+      "url": "https://json.schemastore.org/scikit-build.json"
     },
     {
       "name": "StackHawk Scanner Configuration",
