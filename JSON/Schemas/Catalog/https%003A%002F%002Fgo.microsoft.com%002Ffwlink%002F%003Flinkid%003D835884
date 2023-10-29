@@ -1082,6 +1082,18 @@
       "url": "https://json.schemastore.org/codeship-steps.json"
     },
     {
+      "name": "vcpkg manifest file",
+      "description": "vcpkg manifest file",
+      "fileMatch": ["vcpkg.json"],
+      "url": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json"
+    },
+    {
+      "name": "vcpkg configuration file",
+      "description": "vcpkg configuration file",
+      "fileMatch": ["vcpkg-configuration.json"],
+      "url": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg-configuration.schema.json"
+    },
+    {
       "name": "Vercel",
       "description": "Vercel configuration file",
       "fileMatch": ["vercel.json"],
@@ -5264,6 +5276,12 @@
       "versions": {
         "1.0": "https://json-schema.api.strmprivacy.io/latest/strmprivacy.api.entities.v1.DataContract.json"
       }
+    },
+    {
+      "description": "Sublime Text/Merge syntax highlighting definition",
+      "fileMatch": ["*.sublime-syntax"],
+      "name": "Sublime Syntax",
+      "url": "https://json.schemastore.org/sublime-syntax.json"
     },
     {
       "name": "Keycloak REST API",
